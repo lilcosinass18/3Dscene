@@ -1,0 +1,5 @@
+add_subdirectory(colorLines)
+add_subdirectory(RGBchannel)
+add_subdirectory(colorHistogram)
+add_subdirectory(autocorrection)
+add_subdirectory(noise)

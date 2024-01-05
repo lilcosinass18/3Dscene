@@ -1,0 +1,17 @@
+add_executable(colorLines_test colorLines_test.cpp)
+add_executable(RGBchannel_test RGBchannel_test.cpp)
+add_executable(colorHistogram_test colorHistogram_test.cpp)
+add_executable(autocorrection_test autocorrection_test.cpp)
+add_executable(noise_test noise_test.cpp)
+
+target_link_libraries(colorLines_test colorLines ${OpenCV_LIBS})
+target_link_libraries(RGBchannel_test RGBchannel ${OpenCV_LIBS})
+target_link_libraries(colorHistogram_test colorHistogram ${OpenCV_LIBS})
+target_link_libraries(autocorrection_test autocorrection ${OpenCV_LIBS})
+target_link_libraries(noise_test noise ${OpenCV_LIBS})
+
+add_test(NAME colorLines_test COMMAND colorLines_test)
+add_test(NAME RGBchannel_test COMMAND RGBchannel_test)
+add_test(NAME colorHistogram_test COMMAND colorHistogram_test)
+add_test(NAME autocorrection_test COMMAND autocorrection_test)
+add_test(NAME noise_test COMMAND noise_test)

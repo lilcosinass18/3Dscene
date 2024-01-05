@@ -1,0 +1,1 @@
+#include <RGBchannel/RGBchannel.hpp>
